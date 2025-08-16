@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#2e7d32" />
+  <meta name="description" content="Shanti Biocutical - Bringing Ancient Ayurvedic Wisdom to Modern Wellness" />
+  <title>Shanti Biocutical | Ayurvedic Wellness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="glass-header">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Shanti Biocutical Logo">
+      </div>
+      <nav class="navbar desktop-navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="mobile-nav-toggle" onclick="toggleMobileNav()">
+        <div class="bar top"></div>
+        <div class="bar middle"></div>
+        <div class="bar bottom"></div>
+      </div>
+      <div class="mobile-nav-card">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="home-landing">
+    <div class="home-content">
+      <h1>Welcome to Shanti Biocutical</h1>
+      <p>Bringing Ancient Ayurvedic Wisdom to Modern Wellness</p>
+      <a href="#products" class="scroll-btn fluid-button">Explore Our Products ↓</a>
+    </div>
+  </section>
+
+  <section id="products">
+    <section class="medicine" id="product-absol">
+      <div class="image">
+        <img src="images/absol.png" alt="Absol">
+      </div>
+      <div class="content">
+        <!-- Customize product description and heading here -->
+        <h2>Absol</h2>
+        <span class="tagline">Pain Reliever</span>
+        <p>Absol is an ayurvedic pain relief remedy formulated for joint and muscular pain using time-tested herbal extracts.</p>
+        <!-- Update benefit points here for Absol -->
+        <ul class="benefits-list">
+          <li><strong>Benefits:</strong>
+            <ul>
+              <li>Relieves joint and muscular pain</li>
+              <li>Improves blood circulation in affected areas</li>
+              <li>Reduces inflammation and stiffness</li>
+              <li>Soothes sore muscles</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ingredients-section">
+          <h3>Key Ingredients:</h3>
+          <!-- Replace ingredient images and names here for Absol -->
+          <div class="ingredient-gallery">
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/ashwagandha.png" alt="Ashwagandha">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Ashwagandha</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Balances stress and promotes vitality</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/embelia-ribes.png" alt="Embelia ribes">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Embelia ribes</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Supports digestion and detox</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/long-pepper.png" alt="Long pepper">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Long pepper</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Relieves respiratory distress</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/methi.png" alt="Methi">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Methi</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Boosts metabolism and balances hormones</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/shatavari-roots.png" alt="Shatavari roots">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Shatavari roots</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Improves vitality and immunity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="medicine reverse" id="product-gynox">
+      <div class="image">
+        <img src="images/gynox.png" alt="Gynox">
+      </div>
+      <div class="content">
+        <!-- Customize product description and heading here -->
+        <h2>Gynox</h2>
+        <span class="tagline">Women's Tonic</span>
+        <p>Gynox is specially designed for women's health and hormonal balance, supporting reproductive health naturally.</p>
+        <!-- Update benefit points here for Gynox -->
+        <ul class="benefits-list">
+          <li><strong>Benefits:</strong>
+            <ul>
+              <li>Relieves joint and muscular pain</li>
+              <li>Improves blood circulation in affected areas</li>
+              <li>Reduces inflammation and stiffness</li>
+              <li>Soothes sore muscles</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ingredients-section">
+          <h3>Key Ingredients:</h3>
+          <!-- Replace ingredient images and names here for Gynox -->
+          <div class="ingredient-gallery">
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/ashwagandha.png" alt="Ashwagandha">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Ashwagandha</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Balances stress and promotes vitality</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/embelia-ribes.png" alt="Embelia ribes">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Embelia ribes</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Supports digestion and detox</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/long-pepper.png" alt="Long pepper">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Long pepper</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Relieves respiratory distress</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/methi.png" alt="Methi">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Methi</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Boosts metabolism and balances hormones</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/shatavari-roots.png" alt="Shatavari roots">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Shatavari roots</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Improves vitality and immunity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="medicine" id="product-livx">
+      <div class="image">
+        <img src="images/liv-x.png" alt="Liv-X">
+      </div>
+      <div class="content">
+        <!-- Customize product description and heading here -->
+        <h2>Liv-X</h2>
+        <span class="tagline">Liver Detoxifier</span>
+        <p>Liv-X supports liver detoxification and regeneration with the goodness of ayurvedic herbs like Kalmegh and Bhumyamalaki.</p>
+        <!-- Update benefit points here for Liv-X -->
+        <ul class="benefits-list">
+          <li><strong>Benefits:</strong>
+            <ul>
+              <li>Relieves joint and muscular pain</li>
+              <li>Improves blood circulation in affected areas</li>
+              <li>Reduces inflammation and stiffness</li>
+              <li>Soothes sore muscles</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ingredients-section">
+          <h3>Key Ingredients:</h3>
+          <!-- Replace ingredient images and names here for Liv-X -->
+          <div class="ingredient-gallery">
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/ashwagandha.png" alt="Ashwagandha">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Ashwagandha</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Balances stress and promotes vitality</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/embelia-ribes.png" alt="Embelia ribes">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Embelia ribes</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Supports digestion and detox</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/long-pepper.png" alt="Long pepper">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Long pepper</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Relieves respiratory distress</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/methi.png" alt="Methi">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Methi</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Boosts metabolism and balances hormones</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/shatavari-roots.png" alt="Shatavari roots">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Shatavari roots</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Improves vitality and immunity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="medicine reverse" id="product-nolyz">
+      <div class="image">
+        <img src="images/noly-z.png" alt="Noly-Z">
+      </div>
+      <div class="content">
+        <!-- Customize product description and heading here -->
+        <h2>Noly-Z</h2>
+        <span class="tagline">Iron & Zinc Tonic</span>
+        <p>Noly-Z boosts hemoglobin and immunity with iron and zinc enriched ayurvedic formulation ideal for general weakness.</p>
+        <!-- Update benefit points here for Noly-Z -->
+        <ul class="benefits-list">
+          <li><strong>Benefits:</strong>
+            <ul>
+              <li>Relieves joint and muscular pain</li>
+              <li>Improves blood circulation in affected areas</li>
+              <li>Reduces inflammation and stiffness</li>
+              <li>Soothes sore muscles</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ingredients-section">
+          <h3>Key Ingredients:</h3>
+          <!-- Replace ingredient images and names here for Noly-Z -->
+          <div class="ingredient-gallery">
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/ashwagandha.png" alt="Ashwagandha">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Ashwagandha</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Balances stress and promotes vitality</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/embelia-ribes.png" alt="Embelia ribes">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Embelia ribes</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Supports digestion and detox</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/long-pepper.png" alt="Long pepper">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Long pepper</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Relieves respiratory distress</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/methi.png" alt="Methi">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Methi</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Boosts metabolism and balances hormones</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/shatavari-roots.png" alt="Shatavari roots">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Shatavari roots</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Improves vitality and immunity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="medicine" id="product-pilesx">
+      <div class="image">
+        <img src="images/piles-x.png" alt="Piles-X">
+      </div>
+      <div class="content">
+        <!-- Customize product description and heading here -->
+        <h2>Piles-X</h2>
+        <span class="tagline">Piles Care Formula</span>
+        <p>Piles-X helps in relieving discomfort caused by piles and supports smooth bowel movements using powerful herbal blends.</p>
+        <!-- Update benefit points here for Piles-X -->
+        <ul class="benefits-list">
+          <li><strong>Benefits:</strong>
+            <ul>
+              <li>Relieves joint and muscular pain</li>
+              <li>Improves blood circulation in affected areas</li>
+              <li>Reduces inflammation and stiffness</li>
+              <li>Soothes sore muscles</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ingredients-section">
+          <h3>Key Ingredients:</h3>
+          <!-- Replace ingredient images and names here for Piles-X -->
+          <div class="ingredient-gallery">
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/ashwagandha.png" alt="Ashwagandha">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Ashwagandha</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Balances stress and promotes vitality</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/embelia-ribes.png" alt="Embelia ribes">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Embelia ribes</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Supports digestion and detox</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/long-pepper.png" alt="Long pepper">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Long pepper</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Relieves respiratory distress</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/methi.png" alt="Methi">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Methi</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Boosts metabolism and balances hormones</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/shatavari-roots.png" alt="Shatavari roots">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Shatavari roots</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Improves vitality and immunity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="medicine reverse" id="product-xkas">
+      <div class="image">
+        <img src="images/x-kas.png" alt="X-Kas">
+      </div>
+      <div class="content">
+        <!-- Customize product description and heading here -->
+        <h2>X-Kas</h2>
+        <span class="tagline">Cough Syrup</span>
+        <p>X-Kas is a natural cough syrup with tulsi, honey, and mulethi that soothes the throat and promotes healthy lungs.</p>
+        <!-- Update benefit points here for X-Kas -->
+        <ul class="benefits-list">
+          <li><strong>Benefits:</strong>
+            <ul>
+              <li>Relieves joint and muscular pain</li>
+              <li>Improves blood circulation in affected areas</li>
+              <li>Reduces inflammation and stiffness</li>
+              <li>Soothes sore muscles</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ingredients-section">
+          <h3>Key Ingredients:</h3>
+          <!-- Replace ingredient images and names here for X-Kas -->
+          <div class="ingredient-gallery">
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/ashwagandha.png" alt="Ashwagandha">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Ashwagandha</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Balances stress and promotes vitality</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/embelia-ribes.png" alt="Embelia ribes">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Embelia ribes</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Supports digestion and detox</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/long-pepper.png" alt="Long pepper">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Long pepper</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Relieves respiratory distress</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/methi.png" alt="Methi">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Methi</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Boosts metabolism and balances hormones</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/shatavari-roots.png" alt="Shatavari roots">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Shatavari roots</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Improves vitality and immunity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="medicine" id="product-zimmu">
+      <div class="image">
+        <img src="images/zimmu.png" alt="Zimmu">
+      </div>
+      <div class="content">
+        <!-- Customize product description and heading here -->
+        <h2>Zimmu</h2>
+        <span class="tagline">Digestive Aid</span>
+        <p>Zimmu is a digestive tonic infused with jeera, saunf, and hing that boosts metabolism and relieves gas and bloating.</p>
+        <!-- Update benefit points here for Zimmu -->
+        <ul class="benefits-list">
+          <li><strong>Benefits:</strong>
+            <ul>
+              <li>Relieves joint and muscular pain</li>
+              <li>Improves blood circulation in affected areas</li>
+              <li>Reduces inflammation and stiffness</li>
+              <li>Soothes sore muscles</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ingredients-section">
+          <h3>Key Ingredients:</h3>
+          <!-- Replace ingredient images and names here for Zimmu -->
+          <div class="ingredient-gallery">
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/ashwagandha.png" alt="Ashwagandha">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Ashwagandha</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Balances stress and promotes vitality</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/embelia-ribes.png" alt="Embelia ribes">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Embelia ribes</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Supports digestion and detox</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/long-pepper.png" alt="Long pepper">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Long pepper</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Relieves respiratory distress</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/methi.png" alt="Methi">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Methi</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Boosts metabolism and balances hormones</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/shatavari-roots.png" alt="Shatavari roots">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Shatavari roots</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Improves vitality and immunity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="medicine reverse" id="product-zymex">
+      <div class="image">
+        <img src="images/zymex.png" alt="Zymex">
+      </div>
+      <div class="content">
+        <!-- Customize product description and heading here -->
+        <h2>Zymex</h2>
+        <span class="tagline">Enzyme Enhancer</span>
+        <p>Zymex enhances digestion and nutrient absorption with ayurvedic enzymes to improve gut health and reduce indigestion.</p>
+        <!-- Update benefit points here for Zymex -->
+        <ul class="benefits-list">
+          <li><strong>Benefits:</strong>
+            <ul>
+              <li>Relieves joint and muscular pain</li>
+              <li>Improves blood circulation in affected areas</li>
+              <li>Reduces inflammation and stiffness</li>
+              <li>Soothes sore muscles</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ingredients-section">
+          <h3>Key Ingredients:</h3>
+          <!-- Replace ingredient images and names here for Zymex -->
+          <div class="ingredient-gallery">
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/ashwagandha.png" alt="Ashwagandha">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Ashwagandha</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Balances stress and promotes vitality</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/embelia-ribes.png" alt="Embelia ribes">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Embelia ribes</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Supports digestion and detox</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/long-pepper.png" alt="Long pepper">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Long pepper</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Relieves respiratory distress</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/methi.png" alt="Methi">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Methi</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Boosts metabolism and balances hormones</div>
+            </div>
+            <div class="ingredient-card">
+              <div class="ingredient-card-inner">
+                <div class="ingredient-image-container">
+                  <img src="images/ingredients/shatavari-roots.png" alt="Shatavari roots">
+                </div>
+                <div class="ingredient-name-container">
+                  <p>Shatavari roots</p>
+                </div>
+              </div>
+              <div class="tooltip-info">Improves vitality and immunity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <p>
+        At Shanti Biocutical, we blend ancient Ayurvedic traditions with modern science to create holistic products that nurture the body, mind, and spirit. Our mission is to deliver 100% natural, ethically sourced wellness solutions to help you live a more balanced and vibrant life.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>
+          Are you an Ayurvedic vendor or herbal distributor interested in partnering with us? We're actively looking to collaborate with passionate suppliers and wellness advocates to bring our trusted range of Ayurvedic medicines to more people.
+        </p>
+        <p class="contact-details">
+          📞 <strong>Call Us:</strong> <a href="tel:+18001033030">1800-103-3030</a><br>
+          ✉️ <strong>Email:</strong> <a href="mailto:support@shantibiocutical.com">support@shantibiocutical.com</a>
+        </p>
+      </div>
+      
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <input type="text" name="location" placeholder="City / State (Optional)">
+        </div>
+        <textarea name="message" placeholder="Your Message (max 400 characters)" rows="6" maxlength="400" required></textarea>
+        <small class="char-count">
+          <span id="wordCount">0</span>/400 characters
+        </small>
+        <button type="submit" class="fluid-button">Send</button>
+        <p id="form-confirmation">Thank you! We'll get back to you soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Brand Overview -->
+      <div class="footer-left">
+        <img src="images/logo.png" alt="Shanti Biocutical Logo">
+        <p>Shanti Biocutical – Redefining Ayurveda for the Modern World.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-right footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-right footer-contact-info">
+        <h4>Contact</h4>
+        <p>
+          Shanti Biocutical Pvt. Ltd.<br>
+          23 Ayurveda Lane, Pune, Maharashtra<br>
+          India - 411045<br>
+          <strong>Email:</strong> contact@shantibiocutical.com<br>
+          <strong>Phone:</strong> +91-9876543210
+        </p>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="footer-right footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#">📷</a>
+          <a href="#">💬</a>
+          <a href="#">📘</a>
+          <a href="#">▶️</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      &copy; 2025 Shanti Biocutical. All rights reserved.
+    </div>
+  </footer>
+
+  <div id="backToTop">
+    <span class="back-to-top-label">
+      Move to Top
+      <img src="images/back-to-top-icon.svg" alt="Back to Top" width="20" height="20">
+    </span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
